@@ -4,16 +4,78 @@
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}
-            <link href="{{ asset('css/materialize.css') }}" rel="stylesheet"/>
-            <link href="{{ asset('css/your_form_theme.css') }}" rel="stylesheet"/>
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+            <link href="{{ asset('css/materialize.min.css') }}" rel="stylesheet"/>
+            <link href="{{ asset('css/style.css') }}" rel="stylesheet"/>
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
+        {% block header %}
+            <nav class="white" role="navigation">
+                <div class="nav-wrapper container">
+                    <a id="logo-container" href="#" class="brand-logo"><img src="{{ asset('img/logo_louvre.png') }}">
+                    </a>
+                    <div class="right">
+                        <a href="#">FR</a> | <a href="#">EN</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="index-banner" class="parallax-container">
+                <div class="parallax"><img src="{{ asset('img/banner.png') }}" alt="le Louvre"></div>
+            </div>
+
+            <nav class="white" role="navigation">
+                <div class="nav-wrapper container">
+                    <ul class="left hide-on-med-and-down">
+                        <li><a href="#"><i class="material-icons">home</i></a></li>
+                        <li><a href="#">{{ 'billetterie'|upper }}</a></li>
+                        <li><a href="#">{{ 'Nos tarifs'|upper }}</a></li>
+                        <li><a href="#">{{ 'Infos pratiques'|upper }}</a></li>
+                    </ul>
+
+                    <ul id="nav-mobile" class="side-nav">
+                        <li><a href="#"><i class="material-icons">home</i></a></li>
+                        <li><a href="#">{{ 'billetterie'|upper }}</a></li>
+                        <li><a href="#">{{ 'Nos tarifs'|upper }}</a></li>
+                        <li><a href="#">{{ 'Infos pratiques'|upper }}</a></li>
+                    </ul>
+                    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+                </div>
+            </nav>
+        {% endblock %}
+
         {% block body %}{% endblock %}
+
+        {% block footer %}
+            <footer class="page-footer teal">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l6 s12">
+                            <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="right">
+                            <a href="#">Conditions générales de ventes</a> | <a href="#">Mentions légales</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                    </div>
+                </div>
+            </footer>
+        {% endblock %}
+
         {% block javascripts %}
             <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
             <script type="text/javascript" src="{{ asset('js/materialize.min.js') }}"></script>
+            <script src="{{ asset('js/init.js') }}"></script>
         {% endblock %}
     </body>
 </html>

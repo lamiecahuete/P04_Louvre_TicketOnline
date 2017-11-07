@@ -9,13 +9,19 @@
 namespace AppBundle\Controller;
 
 
-class OrderController
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
+
+class OrderController extends Controller
 {
 	/**
-	 *
+	 * @Route("/order")
 	 */
 	public function showAction()
 	{
+		return $this->render('order/show.html.twig', [
 
+		]);
 	}
 }

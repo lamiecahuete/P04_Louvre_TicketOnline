@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            {{ form_start(BookForm) }}
+            <div class="col l5 s12">
+                {{ form_label(BookForm.date) }}
+                {{ form_widget(BookForm.date) }}
+            </div>
+            <div class="col l5 s12">
+                {{ form_label(BookForm.DayTicketType) }}
+                {{ form_widget(BookForm.DayTicketType) }}<br>
+                {{ form_label(BookForm.HalfDayTicketType) }}
+                {{ form_widget(BookForm.HalfDayTicketType) }}<br>
+                {{ form_label(BookForm.quantity) }}
+                {{ form_widget(BookForm.quantity) }}
+                {{ form_label(BookForm.mail) }}
+                {{ form_widget(BookForm.mail) }}
+                <button type="submit" class="waves-effect waves-light btn">Validez</button>
+            </div>
+            <div class="col l2 s12">
+
+            </div>
+            {{ form_end(BookForm) }}
+        </div>
+    </div>
+{% endblock %}
