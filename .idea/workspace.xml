@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3dd9addd-bf30-45ad-83bf-81c93987ca11" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/forms/bookAdd.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/order/show.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/BookController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/style.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/materialize_layout.html.twig" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/P04.iml" afterPath="$PROJECT_DIR$/.idea/P04.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/OrderController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/OrderController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -314,15 +302,24 @@
       <option name="presentableId" value="Default" />
       <updated>1509974394133</updated>
       <workItem from="1509974395851" duration="2312000" />
-      <workItem from="1509976825537" duration="25919000" />
+      <workItem from="1509976825537" duration="26241000" />
     </task>
+    <task id="LOCAL-00001" summary="This is an online order ticket platform for the Louvre museum.&#10;It's only a school project!&#10;This project use the framework Symfony and Materialize for the css.">
+      <created>1510072867426</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1510072867426</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28231000" />
+    <option name="totallyTimeSpent" value="28553000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="941" y="92" width="1084" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2265625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -367,6 +364,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="This is an online order ticket platform for the Louvre museum.&#10;It's only a school project!&#10;This project use the framework Symfony and Materialize for the css." />
+    <option name="LAST_COMMIT_MESSAGE" value="This is an online order ticket platform for the Louvre museum.&#10;It's only a school project!&#10;This project use the framework Symfony and Materialize for the css." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
